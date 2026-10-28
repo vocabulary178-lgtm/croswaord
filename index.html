@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Describe People's Appearance — Grade 6</title>
+<style>
+:root{--navy:#102a56;--blue:#dff3ff;--pink:#ffe2ef;--green:#e3f8df;--purple:#eee3ff;--yellow:#fff0c9;--line:#d7e2f0}
+*{box-sizing:border-box}body{margin:0;background:#f6faff;color:var(--navy);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+main{max-width:1100px;margin:auto;padding:24px 16px 40px}.hero{background:linear-gradient(120deg,#b9e9ff,#e7f6ff);border-radius:22px;padding:22px;text-align:center}.hero h1{margin:0;font-size:clamp(1.8rem,4vw,3rem)}.hero p{margin:8px 0 0;font-size:1.05rem}
+h2{font-size:1.35rem;margin:26px 0 12px}.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px}.person{background:white;border:2px solid var(--line);border-radius:18px;padding:10px;text-align:center;box-shadow:0 3px 12px #102a560c}.person img{width:100%;height:225px;object-fit:cover;object-position:top center;border-radius:12px;background:#eaf3fb}.person h3{margin:7px 0 2px}.person label{display:block;font-weight:bold;margin-top:8px}.person select{width:100%;padding:10px;border:1px solid #a9bed8;border-radius:10px;background:white;color:var(--navy);font-size:1rem}
+.definitions{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.definition{padding:15px;border-radius:16px;border:2px solid transparent;background:white}.definition b{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--navy);color:white;margin-right:7px}.definition:nth-child(1){background:var(--blue);border-color:#78cfff}.definition:nth-child(2){background:var(--pink);border-color:#ff9ac4}.definition:nth-child(3){background:var(--green);border-color:#94d989}.definition:nth-child(4){background:var(--purple);border-color:#b69aff}.definition:nth-child(5){background:var(--yellow);border-color:#ffc94d}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.button{border:0;border-radius:12px;padding:12px 18px;font-size:1rem;font-weight:bold;cursor:pointer}.primary{background:#1558b0;color:white}.secondary{background:#e4edf8;color:var(--navy)}#feedback{font-weight:bold;margin-top:14px;min-height:28px}.video-box{background:white;border:2px dashed #a9bed8;border-radius:16px;padding:16px}.video-box input{width:100%;padding:10px;border:1px solid #a9bed8;border-radius:10px;margin:8px 0}.video-box iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;margin-top:8px}footer{margin-top:30px;text-align:center;color:#536985;font-size:.9rem}
+@media(max-width:520px){.person img{height:200px}.hero{padding:18px 12px}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero"><h1>Describe People’s Appearance</h1><p><strong>Grade 6 · English</strong></p><p>Look at the pictures. Read descriptions A–E and match each person with the correct description.</p></header>
+<h2>Part 1 — Look at the people</h2>
+<section class="people" aria-label="People and matching choices">
+  <article class="person"><img src="images/portrait_1_tom.png" alt="Tom: boy with short brown hair and a blue hoodie"><h3>1. Tom</h3><label for="tom">Choose a description</label><select id="tom" data-answer="A"><option value="">Choose A–E</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></article>
+  <article class="person"><img src="images/portrait_2_emily.png" alt="Emily: girl with long blonde hair"><h3>2. Emily</h3><label for="emily">Choose a description</label><select id="emily" data-answer="B"><option value="">Choose A–E</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></article>
+  <article class="person"><img src="images/portrait_3_jason.png" alt="Jason: boy with black hair and glasses"><h3>3. Jason</h3><label for="jason">Choose a description</label><select id="jason" data-answer="C"><option value="">Choose A–E</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></article>
+  <article class="person"><img src="images/portrait_4_sophie.png" alt="Sophie: girl with curly red hair and freckles"><h3>4. Sophie</h3><label for="sophie">Choose a description</label><select id="sophie" data-answer="D"><option value="">Choose A–E</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></article>
+  <article class="person"><img src="images/portrait_5_alex.png" alt="Alex: boy with dark hair and a serious expression"><h3>5. Alex</h3><label for="alex">Choose a description</label><select id="alex" data-answer="E"><option value="">Choose A–E</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></article>
+</section>
+<h2>Part 2 — Read the definitions</h2>
+<section class="definitions">
+ <div class="definition"><b>A</b> He has short brown hair and brown eyes. He is tall and slim. He has a friendly smile.</div>
+ <div class="definition"><b>B</b> She has long blonde hair and blue eyes. She is thin and has fair skin.</div>
+ <div class="definition"><b>C</b> He has black hair and wears glasses. He is of medium height and has a kind face.</div>
+ <div class="definition"><b>D</b> She has curly red hair and freckles. She is of medium height and has green eyes.</div>
+ <div class="definition"><b>E</b> He has dark hair and brown eyes. He is tall and athletic. He has a serious look.</div>
+</section>
+<div class="controls"><button class="button primary" id="check">Check answers</button><button class="button secondary" id="reset">Try again</button></div><p id="feedback" role="status" aria-live="polite"></p>
+<h2>Part 3 — Optional video</h2>
+<div class="video-box"><p>To add a video, paste a YouTube <strong>embed URL</strong> below (for example, a URL beginning with <code>https://www.youtube.com/embed/</code>).</p><input id="videoUrl" type="url" placeholder="Paste YouTube embed URL here"><button class="button secondary" id="addVideo">Show video</button><div id="videoContainer"></div></div>
+<footer>Interactive English activity · Grade 6 · Topic: Appearance</footer>
+</main>
+<script>
+const selects=[...document.querySelectorAll('select[data-answer]')];
+document.getElementById('check').addEventListener('click',()=>{let correct=0,filled=0;selects.forEach(s=>{s.style.borderColor='#a9bed8';if(s.value){filled++;if(s.value===s.dataset.answer){correct++;s.style.borderColor='#269447'}else{s.style.borderColor='#d33'}}});const fb=document.getElementById('feedback');if(filled<selects.length){fb.textContent=`You answered ${filled} of 5. Complete the remaining choices.`}else{fb.textContent=`Your score: ${correct}/5. ${correct===5?'Excellent work!':'Check the red choices and try again.'}`}});
+document.getElementById('reset').addEventListener('click',()=>{selects.forEach(s=>{s.value='';s.style.borderColor='#a9bed8'});document.getElementById('feedback').textContent='';});
+document.getElementById('addVideo').addEventListener('click',()=>{const raw=document.getElementById('videoUrl').value.trim();const box=document.getElementById('videoContainer');box.innerHTML='';try{const u=new URL(raw);if(!['www.youtube.com','youtube.com','www.youtube-nocookie.com'].includes(u.hostname)||!u.pathname.startsWith('/embed/'))throw new Error();const frame=document.createElement('iframe');frame.src=u.href;frame.title='Video: describing people’s appearance';frame.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';frame.allowFullscreen=true;box.appendChild(frame)}catch(e){box.textContent='Please enter a valid YouTube embed URL, such as https://www.youtube.com/embed/VIDEO_ID.'}});
+</script>
+</body>
+</html>
